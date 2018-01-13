@@ -1,0 +1,62 @@
+<html>
+{{template "header.tmpl.html"}}
+
+<body>
+    {{template "nav.tmpl.html"}}
+    <section class="hero is-medium has-text-centered full-height">
+        <div class="hero-body" id="bckgrd-img">
+            <div class="container">
+                <div id="bulma" class="columns">
+                    <div class="column" style="flex-grow: 0.75; height: 50%;">
+                            <a href="/blog/cellphones" class="card" style="cursor: pointer; display: block;">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="/static/EnvyBlogScreenshot.png" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content" style="text-align: center;">
+                                            <p class="title is-4">Everyone's Looking for the Meaning of Life Through a Cell Phone Screen...</p>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <time datetime="2016-1-1">Eight thirty PM - Eighth of November Twenty-seventeen</time>
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
+    </section>
+</body>
+<script type="text/javascript">
+    (function () {
+        'use strict';
+        var items = document.querySelectorAll(".timeline li");
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+        function callbackFunc() {
+            for (var i = 0; i < items.length; i++) {
+                if (isElementInViewport(items[i])) {
+                    items[i].classList.add("in-view");
+                }
+            }
+        }
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+    })();
+</script>
+
+</html>
