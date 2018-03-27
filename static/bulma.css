@@ -10,8 +10,8 @@
 }
 
 @font-face {
-    font-family: 'studiogothic';
-    src: url('studiogothic.ttf');
+    font-family: 'caviardreams';
+    src: url('CaviarDreams.ttf');
 }
 
 /*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
@@ -124,7 +124,7 @@ button,
 input,
 select,
 textarea {
-    font-family: studiogothic;
+    font-family: caviardreams;
 }
 
 code,
@@ -142,7 +142,7 @@ body {
 }
 
 a {
-    color: #00d1b2;
+    color: #ff0000;
     cursor: pointer;
     text-decoration: none;
     transition: none 86ms ease-out;
